@@ -1,0 +1,19 @@
+{
+  "name": "expressjs",
+  "version": "1.0.0",
+  "description": "building website with node and expressjs",
+  "main": "appjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil-github29/expressjs.git"
+  },
+  "author": "Mohd Sahil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahil-github29/expressjs/issues"
+  },
+  "homepage": "https://github.com/sahil-github29/expressjs#readme"
+}
