@@ -4,7 +4,7 @@
   "description": "building website with node and expressjs",
   "main": "appjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js -e css,js,json,ejs --ignore feedback.json"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/sahil-github29/expressjs/issues"
   },
-  "homepage": "https://github.com/sahil-github29/expressjs#readme"
+  "homepage": "https://github.com/sahil-github29/expressjs#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "reload": "^1.1.1"
+  }
 }
