@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body id="<%= pageID %>">
+      <% include partials/template/header.ejs %>
+ <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- Login form -->
+          <h3>Please login to see speakers' work</h3>
+          <form class="form-group" id="loginForm" style="width:50%; margin-top:50px;">
+              <label name="username">Username : </label>
+              <input class="form-control" type="text" id="username" name="username" value="" /><br/>
+              <label name="password">Password : </label>
+              <input class="form-control" id="password" type="password" name="password" value="" /><br/>
+              <input type="submit" class="btn btn-primary" name="submit" value="Login" />
+          </form>
+        </div><!-- primary -->
+        <div class="col-sm-6" id="ErrMsg" style="text-align:left; padding:10px; color:red;">
+
+        </div>
+
+      </div>
+    </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>

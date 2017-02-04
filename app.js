@@ -9,6 +9,8 @@ app.use(require('./routes/speakers'))
 app.use(require('./routes/feedback'))
 app.use(require('./routes/api'))
 app.use(require('./routes/owner'))
+app.use(require('./routes/welding'))
+app.use(require('./routes/login'))
 
 /* adding static files folder */
 app.use(express.static('public'))
