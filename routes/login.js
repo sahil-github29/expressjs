@@ -1,9 +1,6 @@
 var express = require('express'),
-    router = express.Router(),
-    bodyParser = require('body-parser');
+    router = express.Router();
 
-// parse application/json
-router.use(bodyParser.json())
 
 router.get('/login', function(req, res) {
     res.render('login' , {
@@ -15,6 +12,9 @@ router.get('/login', function(req, res) {
 router.post('/login', function(req, res) {
     var resObj = {"status" : false , "msg" : "username or password is not valid"};
     if (req.body.username == "sahil") {
+        console.log('Cookies: ', req.cookies)
+        console.log('session: ', req.session)
+        req.session.username = req.body.username
         resObj.status = true
         resObj.msg = "Login successfully"
     }

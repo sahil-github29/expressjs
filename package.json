@@ -18,8 +18,10 @@
   "homepage": "https://github.com/sahil-github29/expressjs#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.5",
     "express": "^4.14.0",
+    "express-session": "^1.15.0",
     "reload": "^1.1.1"
   }
 }
