@@ -9,7 +9,6 @@ router.get('/', function(req, res) {
      data.speakers.forEach(function(item){
          pagePhotos = pagePhotos.concat(item.artwork)
      });
-
     res.render('index' , {
         pageTitle : 'Home ',
         artwork : pagePhotos,

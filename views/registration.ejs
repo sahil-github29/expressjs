@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head><% include partials/template/head.ejs %></head>
+  <body id="<%= pageID %>">
+      <% include partials/template/header.ejs %>
+ <div class="container">
+      <div class="row">
+        <div class="col-sm-8 centered col-md-offset-3">
+          <!-- Login form -->
+          <h3>Please register to see speakers' work</h3>
+          <form class="form-group" id="registrationForm" style="width:50%; margin-top:50px;">
+              <label name="name">Name : </label>
+              <input class="form-control" type="text" id="name" name="name" value="" /><br/>
+              <label name="username">Username : </label>
+              <input class="form-control" type="text" id="username" name="username" value="" /><br/>
+              <label name="password">Password : </label>
+              <input class="form-control" id="password" type="password" name="password" value="" /><br/>
+              <label name="confirm_password">Confirm Password : </label>
+              <input class="form-control" id="confirm_password" type="password" name="confirm_password" value="" /><br/>
+              <label name="email">Email : </label>
+              <input class="form-control" id="email" type="text" name="email" value="" /><br/>
+              <input type="submit" class="btn btn-primary" name="submit" value="Register" />
+          </form>
+        </div><!-- primary -->
+      </div>
+          <br/>
+    </div><!-- container -->
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
